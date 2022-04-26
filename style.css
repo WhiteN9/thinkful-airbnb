@@ -1,0 +1,208 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.item {
+  flex: 1;
+  padding-top: 3px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  About ------- */
+
+section#about .group {
+  flex-direction: column;
+}
+
+/* -------  Ideas ------- */
+
+section#ideas .group {
+  flex-direction: column;
+}
+
+/* -------  Host ------- */
+
+section#host .group {
+  flex-direction: column;
+}
+
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+  }
+
+  header .logo {
+    font-size: 200%;
+  }
+
+  /* form {
+    flex-direction: row;
+  } */
+  #stay form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #stay form .group {
+    flex-direction: column;
+  }
+
+  #stay form div {
+    padding-right: 3%;
+  }
+
+  #stay form div button {
+    font-size: 24px;
+    padding: 15px 45px 15px 45px;
+    width: 100%;
+  }
+
+  #stay form div:first-child {
+    padding-left: 10px;
+  }
+
+
+
+  section#about .group,
+  section#host .group {
+    flex-direction: row;
+    align-items: center;
+  }
+  section#about .item {
+    padding: 10px;
+  }
+
+  section#ideas .group {
+    flex-direction: row;
+  }
+  section#ideas .item {
+    padding: 0 10px 10px 10px;
+  }
+}
