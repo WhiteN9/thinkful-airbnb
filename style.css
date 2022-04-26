@@ -174,9 +174,9 @@ footer p {
     flex-direction: column;
   }
 
-  #stay form div {
+  /* #stay form div {
     padding-right: 3%;
-  }
+  } */
 
   #stay form div button {
     font-size: 24px;
